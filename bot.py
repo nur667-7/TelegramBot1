@@ -1,10 +1,10 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
+import os
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 
-# -----------------------------
-# Конфигурация
-# -----------------------------
-TOKEN = "8742541281:AAFP3Kn9iHIK7Ju19cv9PTMW1uLhzYqZWVU"  # вставь токен от BotFather
+TOKEN = os.getenv("TOKEN")
+
 
 SOCIALS = {
     "Instagram": "https://www.instagram.com/saiduali_nurbek/",
